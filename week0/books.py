@@ -1,5 +1,3 @@
-# books.py
-
 book1_name = "Pragmatic Thinking and Learning"
 book1_price = 30
 counter = 1
