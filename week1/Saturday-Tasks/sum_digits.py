@@ -6,11 +6,11 @@ s = 0
 
 while (True):
     b = n // 10
-    if b >= 1:
-        a = n%10
-        s = a + s
+    if b > 0:
+        a = n % 10
+        s += a
         n = b
     else:
-        s = s + n
+        s += n
         print(s)
         break

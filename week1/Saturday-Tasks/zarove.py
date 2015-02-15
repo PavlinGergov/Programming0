@@ -1,7 +1,7 @@
 from random import randint
 
-first_player = input("Selet name 1: ")
-second_player = input("Select name 2: ")
+first_player = input("Enter first name: ")
+second_player = input("Enter second name: ")
 
 first_score = 1001
 second_score = 1001

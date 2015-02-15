@@ -7,4 +7,6 @@ elif "how are you" in text:
 elif "feelings" in text:
     print("I am a machine. I have no feelings baby!")
 elif "age" in text:
-    print("I hve no age. Only current timestamp")
+    print("I have no age. Only current timestamp")
+else:
+    print("I'm not interested!")

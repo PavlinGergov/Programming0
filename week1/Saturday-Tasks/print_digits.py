@@ -6,7 +6,7 @@ i = 1
 
 while (True):
     b = n // 10
-    if b >= 1:
+    if b > 0:
         a = n%10
         print(a)
         n = b

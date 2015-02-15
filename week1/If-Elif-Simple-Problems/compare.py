@@ -1,6 +1,6 @@
-x = input("First number is : ")
+x = input("First number: ")
 x = int(x)
-y = input("Second number is : ")
+y = input("Second number: ")
 y = int(y)
 if x == y:
     print("The numbers are equal!")

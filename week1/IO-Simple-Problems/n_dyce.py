@@ -1,5 +1,5 @@
-i = input("Broi strani: ")
-import random
-x = random.random()
-y = (x*int(i))//1
-print(y)
+i = input("Number of sides: ")
+i = int(i)
+from random import randint
+x = randint(1,i)
+print("The roll is: " + str(x))
