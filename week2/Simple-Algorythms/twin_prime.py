@@ -14,7 +14,12 @@ def is_prime(n):
 n = input("Enter a number: ")
 n = int(n)
 
-if is_prime(n) and is_prime(n-2) and is_prime(n+2):
-    print("Twin primes with " + str(n))
-    print(str(n-2) + ", " + str(n))
-    print(str(n) + ", " + str(n+2))
+if is_prime(n):
+    print(str(n) + " is prime.")
+else:
+    print(str(n) + " is not prime.")
+    
+if is_prime(n-2):
+    print(str(n-2) + " is twin prime.")
+if is_prime(n+2):
+    print(str(n+2) + " is twin prime.")

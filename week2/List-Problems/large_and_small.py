@@ -4,10 +4,9 @@ n = int(n)
 numbers = []
 
 while n // 10 != 0:
-    if n // 10 != 0:
-        x = n % 10
-        numbers += [x]
-        n = n // 10
+    x = n % 10
+    numbers += [x]
+    n = n // 10
 else:
     numbers += [n]
 

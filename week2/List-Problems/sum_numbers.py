@@ -11,9 +11,10 @@ while count <= n:
     numbers = numbers + [number]
 
     count += 1
-#print("Evens are: ")
     s = 0
+    
 for number in numbers:
     s += number
+    
 print("The sum is: " + str(s))
     

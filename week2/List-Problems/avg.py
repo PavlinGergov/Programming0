@@ -14,6 +14,7 @@ while count <= n:
     
 i = 0
 s = 0
+
 for number in numbers:
     s += number
     

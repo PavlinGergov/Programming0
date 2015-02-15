@@ -1,4 +1,4 @@
-word = input("Enter a word")
+word = input("Enter a word: ")
 
 n = input("Enter count of numbers: ")
 n = int(n)
@@ -19,6 +19,7 @@ p = 0
 for asd in numbers:
     if word in asd:
         p+=1
+        
 print(word + " is found " + str(p) + " times.")
 
     
