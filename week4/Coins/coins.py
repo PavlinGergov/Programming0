@@ -1,6 +1,7 @@
 def calculate_coins(summ):
     info = {}
-    numbs = [100, 50, 20, 10, 5, 2, 1]
+    numbs = [1,2,100,5,10,50,20]
+    numbs = sorted(numbs, reverse = True)
     the_sum = summ * 100
     counter = 0
     for numb in numbs:
