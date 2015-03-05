@@ -9,14 +9,17 @@ def magic_square(square):
         for element in row:
             s += element
         sum_all.append(s)
+        
     for i in range(0, len(square)):
         s = 0
         for row in square:
             s += row[i]
         sum_all.append(s)
+        
     for i in range(0, len(square)):
         forward_diagonal += square[i][i]
     sum_all.append(forward_diagonal)
+    
     for i in range(len(square) - 1, -1, -1):
         backward_diagonal += square[i][i]
     sum_all.append(backward_diagonal)
@@ -27,5 +30,6 @@ def magic_square(square):
                 is_true = False
                 break
     return is_true
+
 print(magic_square([ [23, 28, 21], [22, 24, 26], [27, 20, 25] ]))
 print(magic_square([ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]))
