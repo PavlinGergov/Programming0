@@ -4,10 +4,7 @@ def status_count(students):
               "not_finalized": [],
               }
     for dictionary in students:
-        if dictionary["status"] == "finalized":
-            result["finalized"] += [dictionary["name"]]
-        elif dictionary["status"] == "not_finalized":
-            result["not_finalized"] += [dictionary["name"]]
+            result[dictionary["status"]] += [dictionary["name"]]
     return result
 print(status_count([{
               "name": "RadoRado",
