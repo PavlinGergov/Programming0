@@ -5,4 +5,4 @@ def count_zero_neighours(numbers):
             count += 1
     return count
 
-print(count_zero_neighours([1, 2, -2, 0, 0, 5, -5]))
+print(count_zero_neighours([2, 1, -2, 3, -3, 0, 4, -5]))
