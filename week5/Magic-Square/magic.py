@@ -7,6 +7,7 @@ def magic_square(matrix):
 # Sum of columns:
     for i in range(0, len(matrix)):
         s.append(sum([row[i] for row in matrix]))
+<<<<<<< HEAD
 # Sum of main diagonal:
     s.append(sum([matrix[i][i] for i in range(len(matrix))]))
 # Sum of second diagonal:
@@ -30,3 +31,20 @@ print(magic_square([
 	[17, 47, 46, 20, 21, 43, 42, 24],
 	[9, 55, 54, 12, 13, 51, 50, 16],
 	[64, 2, 3, 61, 60, 6, 7, 57]]))
+=======
+# Sum of diagonals:
+    s.append(sum([matrix[i][i] for i in range(len(matrix))]))
+
+    i = 0
+    result = 0
+    for j in range(len(matrix) - 1, -1, -1):
+        result += matrix[i][j]
+        i += 1
+    s.append(result)
+
+    return all([s[0] == s[i] for i in range(len(s))])
+
+print(magic_square([[23, 28, 21], [22, 24, 26], [27, 20, 25]]))
+print(magic_square([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
+print(magic_square([]))
+>>>>>>> 7d77f108a6e21f75734a5d0e48ba05c1afb44ef5
