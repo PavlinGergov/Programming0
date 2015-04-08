@@ -1,7 +1,7 @@
 def get_a_starting_point(cinema):
     starting_point = len(cinema[0]) + 1
     for row in cinema:
-        if len(row) > starting_point:
+        if len(row) >= starting_point:
             starting_point = len(row) + 1
     return starting_point
 
